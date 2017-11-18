@@ -1,9 +1,39 @@
 package com.eric423.company;
 import myPackage.Ball;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
+
+
+        //ArrayLists
+
+
+        ArrayList animals = new ArrayList();
+        animals.add("Pig");
+        animals.add("cow");
+        animals.add(1);
+
+       /* for (int i = 0; i < animals.size() ; i++) {
+            System.out.println(animals.get(i));
+        }*/
+
+        //in swift -  for aniaml in animals {}
+        for (Object animal : animals) {
+            System.out.println(animal);
+        }
+
+
+
+
+
+
+
+
+
+        /*
 
         int[] numberArray = {5,4,2,5,6,7};
 
@@ -45,7 +75,7 @@ public class Main {
         soccer.printLine();
 
 
-
+      */
 
 
     }
