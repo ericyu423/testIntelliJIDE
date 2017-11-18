@@ -11,6 +11,47 @@ public class Main {
 
     public static void main(String[] args) {
 
+
+        HashMap<String, String> myDict = new HashMap<>();
+        myDict.put("1", "blue");
+        myDict.put("2", "green");
+        myDict.put("3", "yellow");
+
+        System.out.println(myDict);
+        System.out.println(myDict.entrySet());
+
+
+      //  myDict.forEach((k,v) -> System.out.println("key: "+k+" value:"+v));
+
+        myDict.forEach( (k,v) -> {
+
+                    System.out.println("key" + k);
+                    System.out.println("value" + v);
+                }
+        );
+
+        /*
+
+
+        for(Map.Entry<String, HashMap> entry : myDict.entrySet()) {
+            String key = entry.getKey();
+            HashMap value = entry.getValue();
+
+            // do what you have to do here
+            // In your case, another loop.
+        }*/
+
+
+
+
+
+
+
+        /*
+
+
+
+
         //Hashmaps (key -> value)
         //dict in swift
 
@@ -26,12 +67,25 @@ public class Main {
         users.put("x1",55);
         users.put("y2",66);
 
+
+        Iterator iterator = users.entrySet().iterator();
+
+        while (iterator.hasNext()) {
+            Map.Entry keyValuePair = (Map.Entry) iterator.next();
+            System.out.println("key: " + keyValuePair.getKey() + " value: " + keyValuePair.getValue());
+
+
+
+
+        }*/
+
+
         //System.out.println(users.entrySet());
         //System.out.println(users.get("myKey2"));
 
         //ArrayLists
 
-
+/*
 
 
 
@@ -56,9 +110,9 @@ public class Main {
         }*/
 
         //in swift -  for aniaml in animals {}
-        for (Object animal : animals) {
+       /* for (Object animal : animals) {
            // System.out.println(animal);
-        }
+        }*/
 
 
 
