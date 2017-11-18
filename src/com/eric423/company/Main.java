@@ -1,28 +1,63 @@
 package com.eric423.company;
 import myPackage.Ball;
+import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 public class Main {
 
     public static void main(String[] args) {
 
+        //Hashmaps (key -> value)
+        //dict in swift
+
+        // HashMap<Interger, String> newUsers = new HashMap<Interger, String>();
+        // can declare it to be some type
+
+        //HashMap users = new HashMap();
+
+        HashMap<String, Integer> users = new HashMap<String, Integer>();
+
+        users.put("myKey1",23);
+        users.put("myKey2",55);
+        users.put("x1",55);
+        users.put("y2",66);
+
+        //System.out.println(users.entrySet());
+        //System.out.println(users.get("myKey2"));
 
         //ArrayLists
+
+
+
 
 
         ArrayList animals = new ArrayList();
         animals.add("Pig");
         animals.add("cow");
+        animals.add("cow");
         animals.add(1);
 
+        //class interator hold the hashmap
+        Iterator iterator = users.entrySet().iterator();
+
+        //if it have a next item
+        while (iterator.hasNext()) {
+            //cast interator.next() to a Map.entry ...basically translate this to a map.entry that we can use
+            Map.Entry pair = (Map.Entry) iterator.next();
+            System.out.println("key value pair have key " + pair.getKey() + " value " + pair.getValue());
+
+        }
        /* for (int i = 0; i < animals.size() ; i++) {
             System.out.println(animals.get(i));
         }*/
 
         //in swift -  for aniaml in animals {}
         for (Object animal : animals) {
-            System.out.println(animal);
+           // System.out.println(animal);
         }
 
 
