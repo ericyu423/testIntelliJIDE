@@ -5,6 +5,34 @@ public class Main {
 
     public static void main(String[] args) {
 
+        int[] numberArray = {5,4,2,5,6,7};
+
+        int[] newIntArray = new int[5];  //create an array of 5 element 0-4
+        String [] newStringArray = new String[5];
+
+        for (int i=0 ; i < numberArray.length; i++){
+
+            System.out.println(numberArray[i]);
+        }
+
+
+        newIntArray[0] = 1;
+        newIntArray[1] = 2;
+        newIntArray[2] = 4;
+
+
+
+        for (int i=0 ; i < newIntArray.length; i++){
+
+            System.out.println(newIntArray[i]);
+        }
+
+
+
+
+
+
+
 	    Ball ball = new Ball("color","Large");
 
 	    //ball.getColor();
